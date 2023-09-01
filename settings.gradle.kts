@@ -16,3 +16,6 @@ dependencyResolutionManagement {
 rootProject.name = "StarWars-finder-app"
 include(":app")
 include(":core:ui")
+include(":core:base")
+include(":feature:search")
+include(":feature:favorite")

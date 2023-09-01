@@ -3,6 +3,7 @@ package com.semenchuk.starwars_finder_app
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navController = addNavigation()
+
     }
 
     private fun addNavigation(): NavController {
@@ -32,6 +34,16 @@ class MainActivity : AppCompatActivity() {
 
         navView.setupWithNavController(navController)
 
+//        navView.setOnItemReselectedListener { item ->
+//            navController.navigate(
+//                resId = item.itemId,
+//                args = null,
+//                navOptions = NavOptions.Builder()
+//                    .setPopUpTo(destinationId = item.itemId, inclusive = true)
+//                    .setLaunchSingleTop(true)
+//                    .build()
+//            )
+//        }
         return navController
     }
 }
