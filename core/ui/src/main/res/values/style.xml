@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.StarWars.Button" parent="Widget.Material3.Button.ElevatedButton.Icon">
+        <item name="textAllCaps">true</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="Widget.StarWars.IconButton" parent="Widget.Material3.Button.IconButton">
+        <item name="iconTint">@color/white</item>
+        <item name="backgroundTint">@color/accent</item>
+        <item name="iconGravity">textStart</item>
+        <item name="rippleColor">@color/coral</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconSize">25dp</item>
+    </style>
+</resources>
