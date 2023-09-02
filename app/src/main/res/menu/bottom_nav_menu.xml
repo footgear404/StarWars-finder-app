@@ -4,11 +4,11 @@
     <item
         android:id="@+id/search_nav"
         android:icon="@drawable/outline_search"
-        android:title="Search" />
+        android:title="@string/search" />
 
     <item
         android:id="@+id/favorite_nav"
         android:icon="@drawable/solid_favorite"
-        android:title="Favorite" />
+        android:title="@string/favorite" />
 
 </menu>

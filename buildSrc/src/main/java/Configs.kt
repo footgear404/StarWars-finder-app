@@ -8,8 +8,8 @@ object Configs {
     const val versionCode = 1
     const val versionName = "1.0"
     const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    val javaVersion = JavaVersion.VERSION_1_8
-    const val jvmTarget = "1.8"
+    val javaVersion = JavaVersion.VERSION_18
+    const val jvmTarget = "18"
 
     object BuildTypes {
         const val isMinifyEnabled = true
