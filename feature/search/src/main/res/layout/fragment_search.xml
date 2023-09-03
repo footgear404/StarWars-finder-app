@@ -39,9 +39,9 @@
             android:background="@drawable/radio_selector"
             android:button="@null"
             android:checked="true"
-            android:drawableLeft="@drawable/people_ico"
+            android:drawableLeft="@drawable/people"
             android:paddingHorizontal="10dp"
-            android:text="people"
+            android:text="@string/people"
             android:textColor="@drawable/radio_color_selector" />
 
         <RadioButton
@@ -51,9 +51,9 @@
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/radio_selector"
             android:button="@null"
-            android:drawableLeft="@drawable/starship_ico"
+            android:drawableLeft="@drawable/starship"
             android:paddingHorizontal="10dp"
-            android:text="starship"
+            android:text="@string/starship"
             android:textColor="@drawable/radio_color_selector" />
 
         <RadioButton
@@ -63,9 +63,9 @@
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/radio_selector"
             android:button="@null"
-            android:drawableLeft="@drawable/planets_ico"
+            android:drawableLeft="@drawable/planets"
             android:paddingHorizontal="10dp"
-            android:text="planets"
+            android:text="@string/planets"
             android:textColor="@drawable/radio_color_selector" />
     </RadioGroup>
 

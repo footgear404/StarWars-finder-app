@@ -11,5 +11,8 @@
     <string name="passengers">Passengers: %1$s</string>
     <string name="search">Search</string>
     <string name="favorite">Favorite</string>
+    <string name="people">people</string>
+    <string name="starship">starships</string>
+    <string name="planets">planets</string>
 
 </resources>
