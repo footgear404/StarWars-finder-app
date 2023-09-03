@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.SearchView
+import androidx.core.view.isVisible
 import com.semenchuk.EntityType
 import com.semenchuk.api.retrofit.models.SWSearch
 import com.semenchuk.base.BaseFragment
@@ -11,6 +12,7 @@ import com.semenchuk.search.R
 import com.semenchuk.search.databinding.FragmentSearchBinding
 import com.semenchuk.search.presentation.search.adapter.OnItemClickListener
 import com.semenchuk.search.presentation.search.adapter.SearchItemsAdapter
+import com.semenchuk.state.LoadState
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SearchFragment : BaseFragment<FragmentSearchBinding>() {
@@ -22,6 +24,9 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        flowObserver(viewModel.result) { data -> observeData(data?.body()) }
+        flowObserver(viewModel.loadState) { loadState -> loadingObserve(loadState) }
 
         binding.searchList.adapter = adapter
 
@@ -48,15 +53,17 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>() {
             }
         })
 
-        flowObserver(viewModel.result) { data ->
-            observeData(data?.body())
-        }
-
         adapter.setOnItemClickListener(object : OnItemClickListener {
             override fun onItemClick(item: Any) {
                 toast(item.toString())
             }
         })
+    }
+
+    private fun loadingObserve(loadState: LoadState) {
+        with(binding) {
+            loading.isVisible = loadState == LoadState.Loading
+        }
     }
 
     private fun observeData(data: SWSearch<Any>?) {

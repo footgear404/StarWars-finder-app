@@ -15,14 +15,12 @@
         <item name="iconSize">25dp</item>
     </style>
 
-    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
-        <!-- Установите цвет текста при вводе в SearchView -->
-        <item name="android:editTextColor">@color/sun</item>
-    </style>
-
-    <style name="MySearchViewStyle1" parent="Widget.Material3.SearchView">
-        <!-- Установите цвет текста при вводе в SearchView -->
-        <item name="android:editTextColor">@color/sun</item>
+    <style name="SearchViewStyle" parent="Widget.Material3.SearchView">
+        <item name="android:iconifiedByDefault">true</item>
+        <item name="android:queryHint">test</item>
+        <item name="android:searchIcon">@drawable/outline_search</item>
+        <item name="android:closeIcon">@drawable/close</item>
+        <item name="android:textColorHint">@color/sun</item>
     </style>
 
 </resources>
