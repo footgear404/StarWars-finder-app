@@ -11,4 +11,4 @@ Android app based on swapi.dev
 -Material3 Design
 
 App have three screens: Search, Favorite and Detailed screen
-![alt text](https://github.com/footgear404/StarWars-finder-app/blob/main/StarWars-finder-app/media/demo.gif)
+![alt text](https://github.com/footgear404/StarWars-finder-app/blob/main/media/demo.gif)
