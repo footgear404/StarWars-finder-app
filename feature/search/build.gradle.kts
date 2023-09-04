@@ -44,6 +44,7 @@ dependencies {
     implementation(project(":core:ui"))
     implementation(project(":core:base"))
     implementation(project(":core:api"))
+    implementation(project(":feature:details"))
 
     implementation(Dependencies.Core.core_ktx)
     implementation(Dependencies.Core.appcompat)

@@ -17,7 +17,6 @@
 
     <style name="SearchViewStyle" parent="Widget.Material3.SearchView">
         <item name="android:iconifiedByDefault">true</item>
-        <item name="android:queryHint">test</item>
         <item name="android:searchIcon">@drawable/outline_search</item>
         <item name="android:closeIcon">@drawable/close</item>
         <item name="android:textColorHint">@color/sun</item>

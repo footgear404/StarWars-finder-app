@@ -1,7 +1,10 @@
 package com.semenchuk.starwars_finder_app.app
 
 import android.app.Application
+import com.semenchuk.details.di.detailsModule
 import com.semenchuk.di.apiModule
+import com.semenchuk.di.favoriteModule
+import com.semenchuk.di.storageModule
 import com.semenchuk.search.di.searchModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -15,7 +18,7 @@ class App : Application() {
         startKoin {
             androidLogger(level = Level.ERROR)
             androidContext(androidContext = this@App)
-            modules(searchModule, apiModule)
+            modules(searchModule, apiModule, detailsModule, storageModule, favoriteModule)
         }
     }
 }

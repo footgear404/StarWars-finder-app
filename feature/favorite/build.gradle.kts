@@ -39,13 +39,24 @@ android {
 dependencies {
 
     implementation(project(":core:ui"))
+    implementation(project(":core:ui"))
+    implementation(project(":core:base"))
+    implementation(project(":core:api"))
+    implementation(project(":core:storage"))
+    implementation(project(":feature:details"))
 
     implementation(Dependencies.Core.core_ktx)
     implementation(Dependencies.Core.appcompat)
     implementation(Dependencies.Core.material)
     implementation(Dependencies.Core.navigation_fragment_ktx)
     implementation(Dependencies.Core.navigation_ui_ktx)
+
+
     testImplementation(Dependencies.Core.junit)
     androidTestImplementation(Dependencies.Core.ext_junit)
     androidTestImplementation(Dependencies.Core.espresso_core)
+
+    //    Di
+    implementation(Dependencies.Di.koin_core)
+    implementation(Dependencies.Di.koin_android)
 }

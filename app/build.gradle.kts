@@ -42,8 +42,10 @@ dependencies {
 //  modules
     implementation(project(":core:ui"))
     implementation(project(":core:api"))
+    implementation(project(":core:storage"))
     implementation(project(":feature:search"))
     implementation(project(":feature:favorite"))
+    implementation(project(":feature:details"))
 
 //    core
     implementation(Dependencies.Core.core_ktx)

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">Name: %1$s</string>
+    <string name="gender">Sex: %1$s</string>
+    <string name="fleet">Fleet: %1$s</string>
+    <string name="population">Population: %1$s</string>
+    <string name="diameter">Diameter: %1$s</string>
+    <string name="model">Model: %1$s</string>
+    <string name="manufacturer">Manufacturer: %1$s</string>
+    <string name="passengers">Passengers: %1$s</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="people">people</string>
+    <string name="starship">starships</string>
+    <string name="planets">planets</string>
+    <string name="favorite_persons">Favorite persons:</string>
+    <string name="favorite_starships">Favorite starships:</string>
+    <string name="favorite_planets">Favorite planets:</string>
+</resources>

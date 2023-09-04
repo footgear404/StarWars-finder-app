@@ -1,14 +1,17 @@
 package com.semenchuk.api.retrofit.models
 
 
+import android.os.Parcelable
 import com.semenchuk.entity.Starships
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @JsonClass(generateAdapter = true)
 data class StarshipsResponse(
     @Json(name = "cargo_capacity")
-    override val cargoCapacity: String?,
+    override val cargoCapacity: String,
     @Json(name = "consumables")
     override val consumables: String?,
     @Json(name = "cost_in_credits")
@@ -20,7 +23,7 @@ data class StarshipsResponse(
     @Json(name = "edited")
     override val edited: String?,
     @Json(name = "films")
-    override val films: List<String?>?,
+    val films: List<String?>,
     @Json(name = "hyperdrive_rating")
     override val hyperdriveRating: String?,
     @Json(name = "length")
@@ -34,13 +37,13 @@ data class StarshipsResponse(
     @Json(name = "model")
     override val model: String?,
     @Json(name = "name")
-    override val name: String?,
+    override val name: String,
     @Json(name = "passengers")
     override val passengers: String?,
     @Json(name = "pilots")
-    override val pilots: List<Any?>?,
+    val pilots: List<String?>,
     @Json(name = "starship_class")
     override val starshipClass: String?,
     @Json(name = "url")
     override val url: String?
-) : Starships
+) : Starships, Parcelable

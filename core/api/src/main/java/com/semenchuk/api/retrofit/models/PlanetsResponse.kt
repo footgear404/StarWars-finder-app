@@ -1,10 +1,13 @@
 package com.semenchuk.api.retrofit.models
 
 
+import android.os.Parcelable
 import com.semenchuk.entity.Planets
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @JsonClass(generateAdapter = true)
 data class PlanetsResponse(
     @Json(name = "climate")
@@ -35,4 +38,4 @@ data class PlanetsResponse(
     override val terrain: String?,
     @Json(name = "url")
     override val url: String?
-) : Planets
+) : Planets, Parcelable

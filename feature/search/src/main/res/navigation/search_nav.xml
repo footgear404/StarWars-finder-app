@@ -10,5 +10,31 @@
         android:id="@+id/searchFragment"
         android:name="com.semenchuk.search.presentation.search.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_details_nav"
+            app:destination="@id/details_nav">
+            <argument
+                android:name="peopleResponse"
+                android:defaultValue="@null"
+                app:argType="com.semenchuk.api.retrofit.models.PeopleResponse"
+                app:nullable="true" />
+
+            <argument
+                android:name="starshipResponse"
+                android:defaultValue="@null"
+                app:argType="com.semenchuk.api.retrofit.models.StarshipsResponse"
+                app:nullable="true" />
+
+            <argument
+                android:name="planetsResponse"
+                android:defaultValue="@null"
+                app:argType="com.semenchuk.api.retrofit.models.PlanetsResponse"
+                app:nullable="true" />
+        </action>
+
+    </fragment>
+
+    <include app:graph="@navigation/details_nav" />
+
 </navigation>

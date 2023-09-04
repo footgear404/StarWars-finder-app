@@ -24,7 +24,7 @@ class StarWarsApi {
 
     companion object {
         const val BASE_URL = "https://swapi.dev/api/"
-        const val TIME_OUT = 30L
+        const val TIME_OUT = 45L
     }
 
 }

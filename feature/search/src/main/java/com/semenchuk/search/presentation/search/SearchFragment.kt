@@ -5,8 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.SearchView
 import androidx.core.view.isVisible
+import androidx.navigation.fragment.findNavController
 import com.semenchuk.EntityType
+import com.semenchuk.api.retrofit.models.PeopleResponse
+import com.semenchuk.api.retrofit.models.PlanetsResponse
 import com.semenchuk.api.retrofit.models.SWSearch
+import com.semenchuk.api.retrofit.models.StarshipsResponse
 import com.semenchuk.base.BaseFragment
 import com.semenchuk.search.R
 import com.semenchuk.search.databinding.FragmentSearchBinding
@@ -55,7 +59,11 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>() {
 
         adapter.setOnItemClickListener(object : OnItemClickListener {
             override fun onItemClick(item: Any) {
-                toast(item.toString())
+                when (item) {
+                    is PeopleResponse ->  navigate(SearchFragmentDirections.actionSearchFragmentToDetailsNav(item, null, null))
+                    is StarshipsResponse -> {navigate(SearchFragmentDirections.actionSearchFragmentToDetailsNav( null ,  item, null))}
+                    is PlanetsResponse -> {navigate(SearchFragmentDirections.actionSearchFragmentToDetailsNav(null, null, item))}
+                }
             }
         })
     }

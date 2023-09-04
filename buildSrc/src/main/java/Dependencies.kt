@@ -17,6 +17,12 @@ object Dependencies {
         const val moshi_kotlin_codegen = "com.squareup.moshi:moshi-kotlin-codegen:1.15.0"
         const val moshi_kapt = "com.squareup.moshi:moshi-kotlin-codegen:1.15.0"
 
+        //    Room
+        const val room_runtime = "androidx.room:room-runtime:2.5.2"
+        const val room_ktx = "androidx.room:room-ktx:2.5.2"
+        const val room_compiler = "androidx.room:room-compiler:2.5.2"
+        const val room_kapt = "androidx.room:room-compiler:2.5.2"
+
         //    Tests
         const val junit = "junit:junit:4.13.2"
         const val ext_junit = "androidx.test.ext:junit:1.1.5"

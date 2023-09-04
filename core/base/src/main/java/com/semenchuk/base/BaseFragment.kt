@@ -2,6 +2,7 @@ package com.semenchuk.base
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +18,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavDirections
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
 import com.google.android.material.snackbar.Snackbar
@@ -49,7 +51,11 @@ abstract class BaseFragment<B : ViewBinding> : Fragment() {
         findNavController().navigate(direction)
     }
 
-    protected fun navigate(id: Int) {
+    protected fun navigate(direction: NavDirections, args: Parcelable) {
+        findNavController().navigate(direction)
+    }
+
+    protected fun navigate(id: Int, args: Parcelable) {
         findNavController().navigate(id)
     }
 

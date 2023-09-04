@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading">Homeworld: ..........  *searching*</string>
+    <string name="director"><b>Director:</b> %1$s</string>
+    <string name="producer"><b>Producers:</b> %1$s</string>
+    <string name="film_name"><b>Film:</b> %1$s</string>
+    <string name="year"><b>Release:</b> %1$s</string>
+
+    <string name="sex">Sex: .......... %1$s</string>
+    <string name="birth_year">Birthday: .......... %1$s</string>
+    <string name="homeworld">Homeworld: .......... %1$s</string>
+    <string name="height">Height: .......... %1$s</string>
+    <string name="mass">Mass: .......... %1$s</string>
+    <string name="hair_color">Hair color: .......... %1$s</string>
+    <string name="skin_color">Skin color: .......... %1$s</string>
+    <string name="eye_color">Eye color: .......... %1$s</string>
+    <string name="add_to_favorite">Add to favorite</string>
+
+    <string name="films_with_person">Films with person:</string>
+    <string name="starships">Starships:</string>
+
+    <string name="some_header_name">Some header name</string>
+    <string name="starship_name">Starship name: %1$s</string>
+    <string name="model">Model: %1$s</string>
+    <string name="manufacturer">Manufacturer: %1$s</string>
+    <string name="cost_in_credits">Cost in credits: %1$s</string>
+</resources>

@@ -1,9 +1,12 @@
 package com.semenchuk.api.retrofit.models
 
+import android.os.Parcelable
 import com.semenchuk.entity.People
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @JsonClass(generateAdapter = true)
 data class PeopleResponse(
     @Json(name = "birth_year")
@@ -38,4 +41,4 @@ data class PeopleResponse(
     override val url: String?,
     @Json(name = "vehicles")
     override val vehicles: List<String?>
-) : People
+) : People, Parcelable

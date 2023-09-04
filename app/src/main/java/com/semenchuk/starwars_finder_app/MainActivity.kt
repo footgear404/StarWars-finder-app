@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navController = addNavigation()
-
     }
 
     private fun addNavigation(): NavController {
