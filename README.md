@@ -11,4 +11,5 @@ Android app based on swapi.dev
 - Gradle.build on Kotlin / BuildSrc
 
 App have three screens: Search, Favorite and Detailed screen
+
 ![alt text](https://github.com/footgear404/StarWars-finder-app/blob/main/media/demo.gif)
